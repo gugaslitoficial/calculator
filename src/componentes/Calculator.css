@@ -1,0 +1,119 @@
+button {
+    width: 3em;
+    height: 3em;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 2em;
+    margin: 0.3em;
+
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.calculadora {
+    background-color: black;
+    border-radius: 1em;
+    width:20%;
+    height: auto;
+    padding: 1em;
+}
+
+.orange {
+    background-color: #FF9500;
+    color: white;
+}
+
+.gray {
+    background-color: #505050;
+    color: white;
+}
+
+.result {
+    color: white;
+    display: flex;
+    justify-content: right;
+    margin-right: 1em;
+    font-size: 3em;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .calculadora {
+        width: 30%; /* Ajuste para telas de 1280px */
+        padding: 1.5em;
+    }
+
+    button {
+        width: 3em; /* Botões levemente menores */
+        height: 3em;
+        font-size: 1.4em;
+    }
+
+    .result {
+        font-size: 2.8em; /* Ajuste no tamanho do texto */
+    }
+}
+
+/* Responsividade: ajuste para telas médias (1024px) */
+@media screen and (max-width: 1024px) {
+    .calculadora {
+        width: 35%; /* Ajuste intermediário para telas de 1024px */
+        padding: 1.2em;
+    }
+
+    button {
+        width: 3em; /* Botões um pouco menores */
+        height: 3em;
+        font-size: 1.3em;
+    }
+
+    .result {
+        font-size: 2.5em; /* Texto de resultados ajustado */
+    }
+}
+
+/* Responsividade: ajuste para telas menores (768px) */
+@media screen and (max-width: 768px) {
+    .calculadora {
+        width: 40%; /* Calculadora ocupa toda a largura */
+        padding: 1em;
+    }
+
+    button {
+        width: 3em; /* Botões menores em telas pequenas */
+        height: 3em;
+        font-size: 1.2em;
+    }
+
+    .result {
+        font-size: 2.5em; /* Reduz o tamanho do texto */
+    }
+}
+
+/* Responsividade para telas muito pequenas (480px) */
+@media screen and (max-width: 480px) {
+    .calculadora {
+        width: 60%;
+        padding: 0.5em;
+    }
+
+    button {
+        width: 2.5em;
+        height: 2.5em;
+        font-size: 1em;
+    }
+
+    .result {
+        font-size: 2em;
+    }
+}
